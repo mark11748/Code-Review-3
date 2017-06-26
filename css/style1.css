@@ -1,0 +1,26 @@
+#HEADER {
+  background-color: tan;
+  text-align: center;
+}
+
+#FILLER {
+  background-color: grey;
+}
+#MAIN {
+  background-color: grey;
+  min-height: 600px;
+   height: auto !important;
+   height: 600px;
+
+
+}
+
+#SIDEBAR {
+  background-color: olive;
+  min-height: 600px;
+   height: auto !important;
+   height: 600px;
+}
+
+body {
+}

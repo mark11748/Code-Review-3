@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/script1.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/style1.css" type="text/css">
+    <meta charset="utf-8">
+    <title>Code-Review-3</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="row" id="HEADER">
+        <br>
+        <h1>Ping-Pong</h1>
+        <br>
+      </div>
+      <div class="row" id="FILLER">
+        <br>
+        <br>
+      </div>
+      <div class="row">
+        <div class="col-md-3" id="SIDEBAR">
+          <h2>About Ping Pong</h2>
+          <h3>Created by:</h3>
+          <h4>Mark W.</h4>
+          <h3>GitHub Username/URL</h3>
+          <h4>mark11748</h4>
+        </div>
+
+        <div class="col-md-9" id="MAIN">
+          <h1>LET'S PLAY!</h1>
+          <h3>Rules:</h3>
+          <p>pingpong will count up your number from 1 with the followig exceptions:</p>
+          <ol>
+            <li>Numbers divisible by 3 become "ping"</li>
+            <li>Numbers divisible by 5 become "pong"</li>
+            <li>Numbers divisible by 3 and 5 become "pingpong"</li>
+          </ol>
+          <br>
+          <div class="form" id=userIN>
+              <label for="result">Enter your number here:</label>
+              <input type="number" name="Your-Number" min="1" value="1">
+              <input type="Submit" value="Ping Pong!">
+          </div>
+          <br>
+          <div id=userOUT>
+            <ul>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
