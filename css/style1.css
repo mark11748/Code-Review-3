@@ -8,18 +8,18 @@
 }
 #MAIN {
   background-color: grey;
-  min-height: 600px;
+  min-height: 1000px;
    height: auto !important;
-   height: 600px;
+   height: 1000px;
 
 
 }
 
 #SIDEBAR {
   background-color: olive;
-  min-height: 600px;
+  min-height: 1000px;
    height: auto !important;
-   height: 600px;
+   height: 1000px;
 }
 
 body {

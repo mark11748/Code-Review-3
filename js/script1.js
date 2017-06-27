@@ -1,28 +1,42 @@
 
 $(document).ready(function(){
-  $("#USERIN").submit(function(event){
+  $("#userIn").submit(function(event){
+    //debugger;
 
-    debugger;
-
-    var target = $(yourNum).val().parseInt();
-    $("#USEROUT").text("");
+    var target = parseInt($("input#yourNum").val());
+    var targetArray= new Array(target);
+    $("#userOut").empty();
 
     debugger;
 
     for (var counter = 1; counter <= target; counter++) {
+      var index=counter-1;
       if ((counter%3)===0 & (counter%5)===0) {
-        $("#USEROUT").append(counter+" "+"Ping-Pong");
+        targetArray[index]="<li>"+counter+": "+"Ping-Pong"+"</li>";
       }
       if ((counter%3)===0 & (counter%5)!==0) {
-        $("#USEROUT").append(counter+" "+"Ping");
+        targetArray[index]="<li>"+counter+": "+"Ping"+"</li>";
       }
       if ((counter%3)!==0 & (counter%5)===0) {
-        $("#USEROUT").append(counter+" "+"Pong");
+        targetArray[index]="<li>"+counter+": "+"Pong"+"</li>";
       }
       if ((counter%3)!==0 & (counter%5)!==0) {
-        $("#USEROUT").append(counter);
+        targetArray[index]="<li>"+counter+"</li>";
       }
     }
+
+    debugger;
+
+    targetArray.forEach(function(item){
+      $("#userOut").append(item);
+      return 0;
+    });
+
+    //$("#userOUT").append("<li>"+counter+" "+"Ping-Pong"+"</li>");
+    //$("#userOUT").append("<li>"+counter+" "+"Ping"+"</li>");
+    //$("#userOUT").append("<li>"+counter+" "+"Pong"+"</li>");
+    //$("#userOUT").append("<li>"+counter+"</li>");
+
     event.preventDefault();
   });
 
