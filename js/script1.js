@@ -7,7 +7,7 @@ $(document).ready(function(){
     var targetArray= new Array(target);
     $("#userOut").empty();
 
-    debugger;
+    //debugger;
 
     for (var counter = 1; counter <= target; counter++) {
       var index=counter-1;
@@ -25,7 +25,7 @@ $(document).ready(function(){
       }
     }
 
-    debugger;
+    //debugger;
 
     targetArray.forEach(function(item){
       $("#userOut").append(item);
